@@ -1,0 +1,93 @@
+Folder = Repository (Repo)
+Commit changes = Finalize changes
+in Git Hub, whenever we make an .md file or file with text, we need to put html programs to make our text look good like,
+Hi
+I am jas
+it will be printed as "Hi I am jas" we need to add <br> to display it correctly
+
+to download and edit the github file, write:
+'git clone *http to your repository, or the file you want to save into your PC*'
+
+if you write 'clear' ('' is not included in code, ******NOWHERE IN THIS NOTEPAD '' WILL BE INCLUDED IN CODE*****) then all git commands will get cleared
+
+if you write 'ls' ('' is not included in code) then all files inside your git folder, as of october 2023, there is readme.md file present there
+
+'ls -a' will print hidden git files too
+
+If I will to add some document like here i added personal.txt in the existing folder, it is not saved online i.e. i have created this but not saved it, to do so i need to 
+type 'git add .' and all these changes whether i make any other file like html or python etc gets saved on the git Hub
+
+Note- these things are saved but still not uploaded on github
+
+there is a ay to commit change, here it means that we can give title to our work what we did, example if i made a new button to websiite then i cam commit message as new button or something as a name
+to write it we need to type ' git commit -m"*your message*" '
+
+Sometimes it happens THAT WHEN YOU SEE STATUS OF GIT, IT SHOWS AHEAD OF ' *SOMETHING* ' by 1 commit, it means that 1 thing is not uploaded on github as of now
+'git push origin main' (origin is the name you gave to github branch, not exactly but you can say) helps us save the data online on github
+
+to make another directory like Code here its initially code sea, we need to type 'mkdir *name you want*'
+
+to make a repository from git we need to type 'git init', here Code-Ocean will be saved when we type this
+
+I am making any file like html, for no specific reason
+
+NOTE- the repository i made is currently saved in git and not in github, to save it to github see below
+
+'git remote add origin https://github.com/merciless-admiral-3083/Code-Sea-2-Practice.git' You will get this link once you create a repository on github, then you can copy itss link.
+
+here i have made a repository named Code Sea 2 in GITHUB NOT GIT(NAME IS CODE SEA IN GIT) and then i copied the link which was present on the web for the repository code sea 2
+
+after that to verify whether the repository is verified on github type 'git remote -v'
+
+when you type 'git branch' you will know on which branch you are working (its like a tree, the trunk is main and its sub parts are the branches)
+
+if you want to rename a branch then type 'git branch -M *The name you want*'
+
+to save/upload everything online i.e. on github, type 'git push -u origin main'
+
+Note you need to give some name other than origin to other repositories as i faced this issue, i named Code-Sea's branch as origin and Code-Sea-2-Practice as origin again, 
+to resolve this i replaced everything from origin to origin/main (its name of branch for code sea 2 practice), you can name anything for other branch of other repositories
+
+NOTE- MAKING REPO FROM GIT AND THEN SAVING OT GITHUB IS HECTIC, ITS PREFFERED TO MAKE REPO IN GITHUB, AS ITS EASY TO IMPORT AND START WORKING
+
+workflow means the work we are doing i.e. the tree, workflow includes branches adn trunk of tree (its nothing techenical but just to understand)
+
+to find the branch we are working upon type 'git checkout *Branch*', NOTE- IT IS ALSO USED TO JUMP FROM ONE BRANCH TO OTHER, JUST TYPE THE NAME OF OTHER BRANCH
+
+to make a new branch type 'git cheeckout - *new branch name*'
+
+to delete a branch type 'git branch -d *Branch name*'
+
+we cant delete the branch we are currently working upon, we need to jump to other branch to do so
+
+Now, you have to understand that when we create branches, we need to merge them back to the main trunk of the tree, to do so type 
+'git diff *Branch name (its the branch in which you are NOT currently upon)*
+
+to merge 2 branches type 'git merge *the other branch name*'
+
+This was the way to merge branch via git, to do so via github, we can do a pull request
+
+i didnt make any branch at the time of typing this so i didnt perform the branch and merge things, but i have done this thing and it works
+
+Now, the pull (of branches) we have done in github needs to be synced in git, to do so type 'git pull *name of branch/area* main'
+
+to merge two branches use 'git erge *name of branch to be merged in current branch*'
+
+it sometimes happent that the data of branch 1 and branch 2 are a bit same, at thee time of merging, to resolve this conflict, VS Code will gige you options
+the ones like we have when we copy and paste the same file over an existing file in a folder
+
+we sometimes add changes that we didnt wish to, for changes that are added but not commited i.e. saved, type 'git reset *file name*' ex. here file name is first.html
+this will reset ALL, things added in the branch
+
+if we want to rset everythingin ALL FILES, then type 'git reset'
+
+to undo latest commit, type 'git reset HEAD~1' its like Ctrl+Z, NOTE- ITS ~ not -
+
+there is something called hash, which means its identity code for every commiit we make, to access it type 'git log'
+the yellow thing is hash, if we wannt to go from our let say 3rd commit to 1st commit we can type 'git reset *commit hash i.e. yellow part of 1st or any commit*'
+the topmost commit is the latest one
+
+if you type 'git reset --hard *commit hash*' then iit will remove changes from VS Code too, if we dont add --hard then VS Code will show changes but it will be removed from git
+
+Fork is known as rough copy of project/repository, by this we can copy project of ANYONE ON GITHUB and do the changes we wantt in it, if our will we can then do a pull request
+and merge the data we changed/did with the person we copied the file from
